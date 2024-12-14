@@ -1275,3 +1275,14 @@ section .container {
   border: none;
   border-radius: 5px;
 }
+
+.section-title a {
+  color: green; /* Default color */
+  text-decoration: none; /* Removes underline for a cleaner look */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.section-title a:hover {
+  color: rgb(55, 0, 255); /* Change color to white on hover */
+  text-decoration: underline; /* Optional: Adds underline on hover for better visibility */
+}
