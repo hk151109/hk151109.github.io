@@ -372,6 +372,13 @@ section .container {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .section-title h2::after {
+    display: none;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -593,13 +600,13 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .resume-title {
+/* .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
-}
+} */
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
@@ -1234,34 +1241,31 @@ section .container {
 }
 
 
-/* Container for the resume section */
 .resume-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  min-height: 100vh; /* Full viewport height */
-  text-align: center;
+  align-items: center;
   padding: 20px;
   background: #1c2945; /* Dark background for the section */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Heading styles */
-.resume-container h2 {
-  color: #12d640; /* Bright green heading */
-  font-size: 24px;
+/* .section-title {
+  text-align: center;
   margin-bottom: 20px;
-}
+} */
 
-/* PDF Viewer Wrapper */
 .pdf-wrapper {
   max-width: 800px; /* Set maximum width for the PDF viewer */
   width: 100%; /* Make it responsive */
   background: #fff; /* Background for contrast */
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Centers the PDF viewer */
+  display: flex; /* Allows centering of content within the wrapper */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
 }
 
 /* PDF Viewer iframe */
