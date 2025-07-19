@@ -777,6 +777,28 @@
 
   <!-- End Contact Section -->
 
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border-radius: 10px; border: 2px solid #3a834b;">
+      <div class="modal-header" style="background-color: #29803d; color: white; border-bottom: 2px solid #fff;">
+        <h5 class="modal-title" id="portfolioModalLabel">New Portfolio Website</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
+      </div>
+      <div class="modal-body" style="background-color: #f9f9f9; color: #333;">
+        <p style="font-size: 18px; text-align: center;">I have launched a new portfolio website. Would you like to visit it?</p>
+        <div class="d-flex justify-content-center" style="margin-top: 20px;">
+          <button id="goToNewSite" class="btn" style="background-color: #3a7e49; color: white; border-radius: 5px; padding: 10px 20px; margin-right: 15px; font-size: 16px;">Go to New Site</button>
+          <button id="stayHere" class="btn" style="background-color: #e0e0e0; color: #333; border-radius: 5px; padding: 10px 20px; font-size: 16px;">Stay Here</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -796,6 +818,27 @@
       backSpeed: 65
     });
   </script>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      // Show the modal when the page loads
+      var modal = new bootstrap.Modal(document.getElementById('portfolioModal'));
+      modal.show();
+
+      // Event listener for "Go to New Site" button
+      document.getElementById('goToNewSite').addEventListener('click', function() {
+        window.location.href = "https://portfolio-nextjs-466315.uc.r.appspot.com/";  // Replace with your new portfolio link
+      });
+
+      // Event listener for "Stay Here" button
+      document.getElementById('stayHere').addEventListener('click', function() {
+        console.log("User chose to stay on the current page.");
+        modal.hide();  // Close the modal
+      });
+    };
+  </script>
+
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
