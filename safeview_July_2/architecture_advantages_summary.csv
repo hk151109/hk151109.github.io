@@ -1,0 +1,5 @@
+Architecture,Key Strengths,Best Performance Reported,Our Expected Improvement,Research Priority
+CNN (Baseline),"Local feature extraction, Parameter efficiency, Fast inference",95.06% (InceptionV3),Baseline reference,Medium (baseline)
+Vision Transformer (ViT),"Global context, Self-attention, Transfer learning excellence",98.04% (Falconsai ViT),2-3% accuracy gain,High (main focus)
+Object Detection (YOLO),"Localization, Real-time processing, Multi-object detection",94.88% (YOLO+CNN),Localization capability,High (main focus)
+Hybrid CNN-ViT,"Combined local+global features, Balanced performance",97.2% (ViT-DualAtt),3-5% accuracy gain,High (novel approach)

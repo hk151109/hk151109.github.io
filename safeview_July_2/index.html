@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeView - July Second Fortnight Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide Navigation -->
+        <div class="slide-nav">
+            <button class="nav-btn" id="prevBtn">❮</button>
+            <span class="slide-counter">
+                <span id="currentSlide">1</span> / <span id="totalSlides">11</span>
+            </span>
+            <button class="nav-btn" id="nextBtn">❯</button>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <!-- Slide 1: Title -->
+<div class="slide active" data-slide="1">
+    <div class="slide-content title-slide">
+        <h1>SafeView - An automated adult content moderation on social media</h1>
+        <br>
+        <h2>July Second Fortnight Report - LY Project</h2>
+        <div class="title-details">
+            <div class="project-subtitle">
+                <!-- Removed subtitle lines here -->
+            </div>
+            <div class="team-info">
+                <p><strong>Guide:</strong> Dr. Prasanna Shete</p>
+                <div class="team-members">
+                    <p><strong>Team Members:</strong></p>
+                    <p>Hitanshi Patil - 16010122283</p>
+                    <p>Harikrishnan Gopal – 16010122284</p>
+                    <p>Aditya Raut – 16010122288</p>
+                </div>
+            </div>
+        </div>
+        <!-- Logo placeholders -->
+        <div class="logo-containers">
+            <div class="logo-placeholder left-logo">
+                <img src="kjsse.jpg" alt="Institution Logo" class="fit-image" />
+            </div>
+            <div class="logo-placeholder right-logo">
+                <img src="svu.jpg" alt="Department Logo" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Slide 2: Problem Statement -->
+        <div class="slide" data-slide="2">
+            <div class="slide-content">
+                <h1>Problem Statement</h1>
+                <div class="content-section">
+                    <ul class="problem-points">
+                        <li><strong>Growing Need for Automated Content Moderation:</strong> Digital platforms face increasing pressure to moderate explicit content at scale</li>
+                        <li><strong>Protecting Users from Inappropriate Content:</strong> Ensuring safe online environments, particularly for vulnerable user groups</li>
+                        <li><strong>Current Research Gaps:</strong> Limited exploration of advanced architectures for content detection and inadequate handling of borderline/contextual content</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Current State of Research -->
+        <div class="slide" data-slide="3">
+            <div class="slide-content">
+                <h1>Current State of Research</h1>
+                <div class="content-section">
+                    <div class="research-section">
+                        <h3>Our Current Work:</h3>
+                        <ul>
+                            <li>CNN-based Transfer Learning using <strong>Inception V2</strong> achieved <strong>86% accuracy</strong> in our previous semester work</li>
+                            <li>Established baseline understanding of traditional CNN approaches for NSFW detection</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="research-section">
+                        <h3>Industry Standards:</h3>
+                        <ul>
+                            <li>Most commercial solutions rely on CNN architectures (85-95% accuracy range)</li>
+                            <li>Transfer learning from ImageNet has become standard practice</li>
+                            <li>Real-time processing requirements driving need for efficient architectures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Research Gaps Identified -->
+        <div class="slide" data-slide="4">
+            <div class="slide-content">
+                <h1>Research Gaps Identified</h1>
+                <div class="content-section">
+                    <div class="gap-section">
+                        <h3>Limited Vision Transformer Research:</h3>
+                        <ul>
+                            <li>Very few studies explore ViT architectures for NSFW detection</li>
+                            <li>Most research still focused on traditional CNN approaches</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="gap-section">
+                        <h3>Object Detection Models Used Rarely:</h3>
+                        <ul>
+                            <li>YOLO and similar object detection models underutilized in this domain</li>
+                            <li>Existing object detection approaches not properly optimized for borderline content</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="gap-section">
+                        <h3>Borderline Content Challenge:</h3>
+                        <ul>
+                            <li>Current models struggle with contextual and subtle inappropriate content</li>
+                            <li>Need for more sophisticated attention mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Literature Review Highlights -->
+        <div class="slide" data-slide="5">
+            <div class="slide-content">
+                <h1>Literature Review Highlights</h1>
+                <div class="content-section">
+                    <div class="literature-grid">
+                        <div class="literature-section">
+                            <h3>Vision Transformer Success:</h3>
+                            <ul>
+                                <li>ViT-DualAtt: <strong>97.2% accuracy</strong> (Cai et al., 2024)</li>
+                                <li>Falconsai ViT: <strong>98.04% accuracy</strong> with 99.48% AUC</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="literature-section">
+                            <h3>Object Detection Approaches:</h3>
+                            <ul>
+                                <li>EraX-NSFW YOLO11m: <strong>72.6% precision</strong> for body part detection</li>
+                                <li>YOLO + CNN pipeline: <strong>87.75% accuracy</strong> with localization</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="literature-section">
+                            <h3>Transfer Learning Evidence:</h3>
+                            <ul>
+                                <li>60-80% reduction in training time</li>
+                                <li>4.3% average performance improvement over training from scratch</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Research Objectives -->
+        <div class="slide" data-slide="6">
+            <div class="slide-content">
+                <h1>Research Objectives</h1>
+                <div class="content-section">
+                    <div class="objectives-section">
+                        <h3>Primary Goals:</h3>
+                        <ol class="primary-goals">
+                            <li><strong>Improve upon our 86% Inception V2 baseline</strong> using advanced architectures</li>
+                            <li><strong>Implement and evaluate Vision Transformers</strong> for NSFW detection</li>
+                            <li><strong>Develop Object Detection pipeline</strong> for content localization</li>
+                            <li><strong>Compare transfer learning effectiveness</strong> across CNN, ViT, and YOLO</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="objectives-section">
+                        <h3>Target Metrics:</h3>
+                        <ul>
+                            <li>Achieve >95% accuracy (significant improvement over current 86%)</li>
+                            <li>Enable real-time processing (<100ms inference)</li>
+                            <li>Provide interpretable results through attention visualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Proposed Methodology -->
+        <div class="slide" data-slide="7">
+            <div class="slide-content">
+                <h1>Proposed Methodology</h1>
+                <div class="content-section">
+                    <div class="methodology-phases">
+                        <div class="phase">
+                            <h4>Phase 1: Enhanced CNN Baseline</h4>
+                            <ul>
+                                <li>Extend beyond Inception V2 to InceptionV3, ResNet, DenseNet</li>
+                                <li>Optimize transfer learning strategies</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="phase">
+                            <h4>Phase 2: Vision Transformer Implementation</h4>
+                            <ul>
+                                <li>ViT with transfer learning</li>
+                                <li>ViT hybrid CNN-Transformer architecture</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="phase">
+                            <h4>Phase 3: Object Detection Integration</h4>
+                            <ul>
+                                <li>YOLOv8 for sensitive content localization</li>
+                                <li>Multi-class detection (5 sensitive object categories)</li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Literature Survey - Key Papers -->
+        <div class="slide" data-slide="8">
+            <div class="slide-content">
+                <h1>Literature Survey - Key Papers</h1>
+                <div class="content-section">
+                    <div class="table-container">
+                        <table class="literature-table">
+                            <thead>
+                                <tr>
+                                    <th>Paper</th>
+                                    <th>Method</th>
+                                    <th>Performance</th>
+                                    <th>Key Contribution</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ViT-DualAtt (Cai et al., 2024)</td>
+                                    <td>CNN-Transformer Hybrid</td>
+                                    <td><strong>97.2% accuracy</strong></td>
+                                    <td>Hierarchical dual attention</td>
+                                </tr>
+                                <tr>
+                                    <td>Falconsai ViT (2023)</td>
+                                    <td>Transfer Learning ViT</td>
+                                    <td><strong>98.04% accuracy</strong></td>
+                                    <td>High-performance ViT model</td>
+                                </tr>
+                                <tr>
+                                    <td>EraX-NSFW (2024)</td>
+                                    <td>YOLO11m Object Detection</td>
+                                    <td><strong>72.6% precision</strong></td>
+                                    <td>Multi-class body part detection</td>
+                                </tr>
+                                <tr>
+                                    <td>YOLO+CNN Pipeline (2021)</td>
+                                    <td>Hybrid Detection-Classification</td>
+                                    <td><strong>87.75% accuracy</strong></td>
+                                    <td>Attention-focused CNN</td>
+                                </tr>
+                                <tr>
+                                    <td>InceptionV3 Benchmark</td>
+                                    <td>CNN Transfer Learning</td>
+                                    <td><strong>95.06% accuracy</strong></td>
+                                    <td>SOTA CNN performance</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="research-gaps-summary">
+                        <h3>Research Gaps Confirmed:</h3>
+                        <ul>
+                            <li>Only 3/20 recent papers explore ViT architectures</li>
+                            <li>Object detection approaches limited to basic implementations</li>
+                            <li>No comprehensive comparison across all three architectures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Justification for Architecture Choices -->
+        <div class="slide" data-slide="9">
+            <div class="slide-content">
+                <h1>Justification for Architecture Choices</h1>
+                <div class="content-section">
+                    <div class="justification-grid">
+                        <div class="justification-section">
+                            <h3>Why Vision Transformers?</h3>
+                            <ul>
+                                <li><strong>Global Context:</strong> Self-attention captures long-range dependencies</li>
+                                <li><strong>Transfer Learning Excellence:</strong> Superior adaptation from ImageNet</li>
+                                <li><strong>Performance:</strong> 2-5% accuracy improvement over best CNNs</li>
+                                <li><strong>Interpretability:</strong> Attention maps show decision reasoning</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="justification-section">
+                            <h3>Why Object Detection?</h3>
+                            <ul>
+                                <li><strong>Localization:</strong> Identifies WHERE inappropriate content appears</li>
+                                <li><strong>Real-time:</strong> Single-pass processing enables deployment</li>
+                                <li><strong>Multi-instance:</strong> Detects multiple sensitive objects per image</li>
+                                <li><strong>Practical Value:</strong> Enables selective content masking vs. full blocking</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="justification-section">
+                            <h3>Why Transfer Learning Focus?</h3>
+                            <ul>
+                                <li><strong>Efficiency:</strong> 60-80% reduction in training time</li>
+                                <li><strong>Fair Comparison:</strong> Same pre-training baseline across architectures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Expected Outcomes & Evaluation -->
+        <div class="slide" data-slide="10">
+            <div class="slide-content">
+                <h1>Expected Outcomes & Evaluation</h1>
+                <div class="content-section">
+                    <div class="outcomes-grid">
+                        <div class="outcome-section">
+                            <h3>Quantitative Goals:</h3>
+                            <ul>
+                                <li>Achieve >95% accuracy (significant improvement over current 86%)</li>
+                                <li>Demonstrate ViT superiority over CNN baseline</li>
+                                <li>Enable <100ms inference time for real-world deployment</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="outcome-section">
+                            <h3>Qualitative Contributions:</h3>
+                            <ul>
+                                <li>First comprehensive CNN vs ViT vs YOLO comparison for NSFW detection</li>
+                                <li>Novel hybrid CNN-ViT architecture development</li>
+                                <li>Attention visualization for interpretable content moderation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="outcome-section">
+                            <h3>Evaluation Metrics:</h3>
+                            <ul>
+                                <li><strong>Classification:</strong> Accuracy, Precision, Recall, F1-Score, AUC</li>
+                                <li><strong>Detection:</strong> mAP@0.5, localization accuracy</li>
+                                <li><strong>Efficiency:</strong> Inference time, memory usage, computational complexity</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="outcome-section">
+                            <h3>Success Criteria:</h3>
+                            <ul>
+                                <li>Exceed 95% accuracy threshold</li>
+                                <li>Demonstrate clear architectural advantages</li>
+                                <li>Produce deployment-ready prototype</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Dataset Challenges & Next Fortnight Plans -->
+        <div class="slide" data-slide="11">
+            <div class="slide-content">
+                <h1>Dataset Challenges & Next Fortnight Plans</h1>
+                <div class="content-section">
+                    <div class="dataset-grid">
+                        <div class="dataset-section">
+                            <h3>Current Dataset Limitations:</h3>
+                            <ul>
+                                <li><strong>Limited Demographic Diversity:</strong> Current dataset lacks representation from diverse racial groups</li>
+                                <li><strong>Bias in Training Data:</strong> Potential model bias due to homogeneous data sources</li>
+                                <li><strong>Incomplete Coverage:</strong> Missing edge cases and borderline content examples</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dataset-section">
+                            <h3>Next Fortnight Objectives:</h3>
+                            <ul>
+                                <li><strong>Curate Comprehensive Dataset:</strong> Source images from diverse demographic groups</li>
+                                <li><strong>Ethical Data Collection:</strong> Ensure appropriate consent and ethical guidelines</li>
+                                <li><strong>Balanced Representation:</strong> Include varied racial, ethnic, and cultural backgrounds</li>
+                                <li><strong>Quality Assessment:</strong> Implement rigorous annotation and quality control</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dataset-section">
+                            <h3>Expected Outcomes:</h3>
+                            <ul>
+                                <li>More robust and unbiased model training</li>
+                                <li>Improved generalization across diverse user populations</li>
+                                <li>Enhanced fairness in content moderation decisions</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
