@@ -1,0 +1,103 @@
+\begin{twocolentry}{
+        \textit{\href{https://github.com/hk151109/FinCredible}{GitHub}}
+    }
+        \textbf{FinCredible}
+    \end{twocolentry}
+        
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a full-stack finance platform (MERN) integrating real-time market data and 10K+ news articles into personalized user feeds using REST APIs
+            \item Integrated a FastAPI microservice delivering ML-based stock recommendations (Gradient Boosting \& LSTM) via secure REST APIs
+            \item Secured APIs with JWT-based authentication and role-based access control, and implemented automated testing with CI/CD pipelines (GitHub Actions) for seamless, secure deployments and rollback
+
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        \textit{\href{https://github.com/hk151109/UniqScan}{GitHub}}
+    }
+        \textbf{UniqScan}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a MERN stack web application for assignment management, student submissions, and educator dashboards with a Node.js/Express backend handling authentication, submissions, and real-time updates
+            \item Integrated a Flask-based microservice exposing AI content detection models (NLTK, OCR, fine-tuned RoBERTa) for LLM-generated and plagiarized content analysis, returning structured scores to the main system
+            \item Designed modular REST APIs to deliver on-demand scoring results and live status updates, ensuring smooth educator review and academic integrity enforcement
+
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        \textit{\href{https://github.com/hk151109/CodeSync}{GitHub}}
+    }
+        \textbf{CodeSync}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item A real-time collaborative coding platform enabling simultaneous multi-user code editing and execution using Firestore and Dockerized backend
+            \item Integrated a VS Code-style editor with live code sync, session sharing, and remote Python code execution via Flask API in an isolated environment
+            \item Architected containerized sandbox environments and automated rollouts on GCP, ensuring reliable scaling and secure code execution under concurrent load
+
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        \textit{\href{https://harikrishnan.tech}{Website} | \href{https://github.com/hk151109/Portfolio}{GitHub}}
+    }
+        \textbf{Portfolio Website}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a fully responsive personal portfolio using Next.js, Tailwind CSS, and Framer Motion, featuring sections for projects, experience, and contact with smooth UI transitions
+            \item Deployed on Google App Engine with a custom domain and structured component-based design for scalability and maintainability
+            \item Configured CI/CD pipeline using GitHub and Google Cloud Build with a cloudbuild.yaml setup for automated builds and zero-downtime deployments
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{
+        \textit{\href{https://github.com/hk151109/SafeView}{GitHub}}
+    }
+        \textbf{SafeView}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Developed a real-time, privacy-focused Chrome extension for NSFW content moderation using TensorFlow.js and a fine-tuned MobileNetV3-Small model
+            \item Implemented modular components for in-browser image classification, dynamic content obfuscation, and user-configurable filtering settings
+            \item Designed an optimized frame-processing pipeline using a queued buffer system to handle 10,000+ frames from 60fps videos (1-min duration), ensuring smooth real-time moderation without browser lag
+        \end{highlights}
+    \end{onecolentry}
+
+
+    \begin{twocolentry}{
+        \textit{\href{https://github.com/hk151109/StockSage}{GitHub}}
+    }
+        \textbf{StockSage}
+    \end{twocolentry}
+
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Built a Flask micro-service that streams live OHLC data from Alpha Vantage, feeds it to an LSTM (TensorFlow), and serves rolling price forecasts via REST API
+            \item Visualized actual vs predicted prices and confidence bands with Matplotlib on a responsive UI, giving traders an at-a-glance decision aid
+            \item Deployed model via REST API using FastAPI/Flask, containerized with Docker and hosted on Azure for real-time inference
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
